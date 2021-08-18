@@ -1,6 +1,6 @@
 package wire
 
-import "github.com/ned-lambdatest/mobile-device-adb/fixinternal/errors"
+import "github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 
 const (
 	// The official implementation of adb imposes an undocumented 255-byte limit

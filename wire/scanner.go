@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"strconv"
 
-	"github.com/ned-lambdatest/mobile-device-adb/fixinternal/errors"
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 )
 
 // TODO(zach): All EOF errors returned from networoking calls should use ConnectionResetError.

@@ -1,6 +1,6 @@
 package adb
 
-import "github.com/ned-lambdatest/mobile-device-adb/fixinternal/errors"
+import "github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 
 type ErrCode errors.ErrCode
 

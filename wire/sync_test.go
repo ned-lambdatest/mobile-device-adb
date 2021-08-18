@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ned-lambdatest/mobile-device-adb/fixinternal/errors"
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
 
