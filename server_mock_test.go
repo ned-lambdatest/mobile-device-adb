@@ -4,7 +4,6 @@ import (
 	"io"
 	"strings"
 
-	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 	"github.com/ned-lambdatest/mobile-device-adb/wire"
 )
 

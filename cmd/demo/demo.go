@@ -9,7 +9,6 @@ import (
 	"time"
 
 	adb "github.com/ned-lambdatest/mobile-device-adb"
-	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 )
 
 var (
