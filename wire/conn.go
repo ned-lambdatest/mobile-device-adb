@@ -5,7 +5,7 @@ import "github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 const (
 	// The official implementation of adb imposes an undocumented 255-byte limit
 	// on messages.
-	MaxMessageLength = 255
+	MaxMessageLength = 1024 * 1024
 )
 
 /*
