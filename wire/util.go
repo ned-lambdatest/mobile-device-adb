@@ -3,9 +3,10 @@ package wire
 import (
 	"fmt"
 	"io"
-	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"regexp"
 	"sync"
+
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 )
 
 // ErrorResponseDetails is an error message returned by the server for a particular request.

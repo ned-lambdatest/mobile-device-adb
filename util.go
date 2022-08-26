@@ -2,10 +2,11 @@ package adb
 
 import (
 	"fmt"
-	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"reflect"
 	"regexp"
 	"strings"
+
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 )
 
 var (

@@ -13,6 +13,10 @@ github.com/mattn/go-isatty v0.0.8/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hd
 github.com/mattn/go-isatty v0.0.11/go.mod h1:PhnuNfih5lzO57/f3n+odYbM4JtupLOxQOAqxQCu2WE=
 github.com/mattn/go-runewidth v0.0.4 h1:2BvfKmzob6Bmd4YsL0zygOqfdFnK7GR4QL06Do4/p7Y=
 github.com/mattn/go-runewidth v0.0.4/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
+github.com/ned-lambdatest/mobile-device-adb v0.0.0-20210819055928-448ee86c4659 h1:nPIME5dNaFfMKbJA1lcEetaf2hwe5ZJWQ3sRZniRaIA=
+github.com/ned-lambdatest/mobile-device-adb v0.0.0-20210819055928-448ee86c4659/go.mod h1:BXNF5nhXPXS8UHoNqTKWhq+BLDovebWAVaMiEicCakg=
+github.com/ned-lambdatest/mobile-device-adb/pkg/errors v0.0.0-20220826135603-313c6cec166a h1:A/zYINkZ50TV9TSb43jZFTgS+Avc+a3CicBvFebO/zA=
+github.com/ned-lambdatest/mobile-device-adb/pkg/errors v0.0.0-20220826135603-313c6cec166a/go.mod h1:tpJ9ntwt5sQFI7g5SswHiNmyeaLvfVBpOh9v7rM+hIM=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=

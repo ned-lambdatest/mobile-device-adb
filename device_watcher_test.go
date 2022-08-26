@@ -1,9 +1,9 @@
 package adb
 
 import (
-	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"testing"
 
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 	"github.com/ned-lambdatest/mobile-device-adb/wire"
 	"github.com/stretchr/testify/assert"
 )

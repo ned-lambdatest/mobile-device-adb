@@ -5,9 +5,9 @@ import (
 	"bytes"
 	"io"
 	"io/ioutil"
-	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"testing"
 
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
 

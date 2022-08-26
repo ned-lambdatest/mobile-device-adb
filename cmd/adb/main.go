@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io"
-	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"os"
 	"path/filepath"
 	"syscall"
@@ -11,6 +10,7 @@ import (
 
 	"github.com/cheggaaa/pb"
 	adb "github.com/ned-lambdatest/mobile-device-adb"
+	"github.com/ned-lambdatest/mobile-device-adb/pkg/errors"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
@@ -177,7 +177,7 @@ func pull(showProgress bool, remotePath, localPath string, device adb.DeviceDesc
 	client := client.Device(device)
 
 	info, err := client.Stat(remotePath)
-	if errors.HasErrCode(err, adb.ErrCode(adb.FileNoExistError)) {
+	if errors.HasErrCode(err, errors.ErrCode(errors.FileNoExistError)) {
 		fmt.Fprintln(os.Stderr, "remote file does not exist:", remotePath)
 		return 1
 	} else if err != nil {
@@ -187,7 +187,7 @@ func pull(showProgress bool, remotePath, localPath string, device adb.DeviceDesc
 
 	remoteFile, err := client.OpenRead(remotePath)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error opening remote file %s: %s\n", remotePath, adb.ErrorWithCauseChain(err))
+		fmt.Fprintf(os.Stderr, "error opening remote file %s: %s\n", remotePath, errors.ErrorWithCauseChain(err))
 		return 1
 	}
 	defer remoteFile.Close()
