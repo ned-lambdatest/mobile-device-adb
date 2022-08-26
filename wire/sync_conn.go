@@ -1,5 +1,7 @@
 package wire
 
+import "ned-lambdatest/mobile-device-adb/pkg/errors"
+
 const (
 	// Chunks cannot be longer than 64k.
 	SyncMaxChunkSize = 64 * 1024

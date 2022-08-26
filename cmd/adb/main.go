@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"os"
 	"path/filepath"
 	"syscall"
@@ -176,7 +177,7 @@ func pull(showProgress bool, remotePath, localPath string, device adb.DeviceDesc
 	client := client.Device(device)
 
 	info, err := client.Stat(remotePath)
-	if adb.HasErrCode(err, adb.ErrCode(adb.FileNoExistError)) {
+	if errors.HasErrCode(err, adb.ErrCode(adb.FileNoExistError)) {
 		fmt.Fprintln(os.Stderr, "remote file does not exist:", remotePath)
 		return 1
 	} else if err != nil {

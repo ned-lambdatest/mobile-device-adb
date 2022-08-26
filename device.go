@@ -3,6 +3,7 @@ package adb
 import (
 	"fmt"
 	"io"
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"os"
 	"strings"
 	"time"

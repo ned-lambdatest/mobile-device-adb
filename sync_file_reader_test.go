@@ -3,6 +3,7 @@ package adb
 import (
 	"io"
 	"io/ioutil"
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"strings"
 	"testing"
 
@@ -109,6 +110,6 @@ func TestReadErrorNotFound(t *testing.T) {
 	s := wire.NewSyncScanner(strings.NewReader(
 		"FAIL\031\000\000\000No such file or directory"))
 	_, err := newSyncFileReader(s)
-	assert.True(t, HasErrCode(err, FileNoExistError))
+	assert.True(t, errors.HasErrCode(err, errors.FileNoExistError))
 	assert.EqualError(t, err, "FileNoExistError: no such file or directory")
 }

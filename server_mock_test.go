@@ -2,6 +2,7 @@ package adb
 
 import (
 	"io"
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"strings"
 
 	"github.com/ned-lambdatest/mobile-device-adb/wire"

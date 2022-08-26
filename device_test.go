@@ -1,6 +1,7 @@
 package adb
 
 import (
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"testing"
 
 	"github.com/ned-lambdatest/mobile-device-adb/wire"
@@ -46,7 +47,7 @@ func TestGetDeviceInfo(t *testing.T) {
 
 	client = newDeviceClientWithDeviceLister("serial", deviceLister)
 	device, err = client.DeviceInfo()
-	assert.True(t, HasErrCode(err, DeviceNotFound))
+	assert.True(t, errors.HasErrCode(err, errors.DeviceNotFound))
 	assert.EqualError(t, err.(*errors.Err).Cause,
 		"DeviceNotFound: device list doesn't contain serial serial")
 	assert.Nil(t, device)

@@ -1,6 +1,7 @@
 package adb
 
 import (
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"testing"
 
 	"github.com/ned-lambdatest/mobile-device-adb/wire"
@@ -32,7 +33,7 @@ func TestParseDeviceStatesMalformed(t *testing.T) {
 0x0x0x0x
 `)
 
-	assert.True(t, HasErrCode(err, ParseError))
+	assert.True(t, errors.HasErrCode(err, errors.ParseError))
 	assert.Equal(t, "invalid device state line 1: 0x0x0x0x", err.(*errors.Err).Message)
 }
 

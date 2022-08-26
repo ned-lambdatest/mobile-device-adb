@@ -3,6 +3,7 @@ package wire
 import (
 	"fmt"
 	"io"
+	"ned-lambdatest/mobile-device-adb/pkg/errors"
 	"regexp"
 	"sync"
 )

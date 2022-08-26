@@ -124,7 +124,7 @@ func publishDevices(watcher *deviceWatcherImpl) {
 			return
 		}
 
-		if HasErrCode(err, ConnectionResetError) {
+		if errors.HasErrCode(err, errors.ConnectionResetError) {
 			// The server died, restart and reconnect.
 
 			// Delay by a random [0ms, 500ms) in case multiple DeviceWatchers are trying to
