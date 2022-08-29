@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"io"
 	"log"
-	adb "ned-lambdatest/mobile-device-adb"
 	"os"
 	"strings"
 
+	adb "github.com/ned-lambdatest/mobile-device-adb"
 	"github.com/ned-lambdatest/mobile-device-adb/wire"
 )
 
